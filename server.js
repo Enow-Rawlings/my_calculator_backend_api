@@ -1,4 +1,3 @@
-server.js
 const express = require('express');
 const axios = require('axios');
 const app = express();
@@ -55,5 +54,6 @@ app.post('/solve-math', async (req, res) => {
     res.status(500).json({ error: 'Failed to solve problem' });
   }
 });
+
 
 app.listen(process.env.PORT);
