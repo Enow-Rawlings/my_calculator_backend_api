@@ -1,5 +1,5 @@
 const express = require('express');
-const axios = require('axios');
+// const axios = require('axios');
 const app = express();
 
 app.use(express.json({limit: '50mb'}));
@@ -54,5 +54,6 @@ app.post('/solve-math', async (req, res) => {
     res.status(500).json({ error: 'Failed to solve problem' });
   }
 });
+
 
 app.listen(process.env.PORT);
